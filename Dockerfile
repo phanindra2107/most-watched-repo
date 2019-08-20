@@ -11,5 +11,3 @@ COPY ./repos-list.py /usr/bin/
 RUN chmod 777 /usr/bin/repos-list.py
 CMD python /usr/bin/repos-list.py -t $ENV1 -d $ENV2
 ENTRYPOINT ["python", "/usr/bin/repos-list.py"]
-#ENTRYPOINT ["python3"]
-#ENTRYPOINT ["/usr/bin/repos-list.py", "run"]
