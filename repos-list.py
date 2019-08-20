@@ -59,9 +59,9 @@ if repos != None and repos.status_code == 200 and len(repos.json()) > 0:
             for i in range(0,rng):
                 print(sorted_dict1[i][0])
         else:
-            print("Number is 0")
+            print("Error: Contributors value should be greater than 0")
     except:
-        print("Number is not correct")
+        print("Error: Contributors should be an integer")
 
 else:
-    print("Invalid org name")
+    print("Error: Invalid Organisation Name")
